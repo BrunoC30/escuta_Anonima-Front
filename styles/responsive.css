@@ -1,0 +1,10 @@
+@media(min-width:566px) {
+    .ilustrar{
+        height: 700px;
+    }
+}
+@media(min-width:700px){
+    .formulario-container{
+        bottom:19vh;
+    }
+}

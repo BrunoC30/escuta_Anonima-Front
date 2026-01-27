@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <title>Escuta Anonima</title>
+</head>
+<body>
+    <nav>
+        <div class="icone"></div>
+        <p data-go="informativa" class="smoth">Sobre</p>
+        <p data-go="relatos" class="smoth">Relatos</p>
+        <p data-go="estatisticas" class="smoth">Análise</p>
+    </nav>
+    <section id="informativa" class="">
+        <div class="hero">
+            <p><span>Escutar</span> também é um ato de cuidado</p>
+        </div>
+        <div class="container">
+            <!--Textos explicativos-->
+            <div class="textos">
+                <div id="oque_e">
+                    <h1>Oque é o escuta anônima</h1>
+                    <p> 
+                        Escuta Anônima é um espaço seguro para mulheres 
+                        compartilharem desabafos, 
+                        vivências e relatos de 
+                        injustiças de gênero 
+                        presentes na sociedade atual, de 
+                        forma anônima e sem julgamentos.
+                    </p>
+                    
+                    <p>
+                        A plataforma busca promover escuta, 
+                        empatia e reflexão coletiva, sem 
+                        substituir apoio profissional, 
+                        mas oferecendo um ambiente de 
+                        acolhimento e respeito.
+                    </p>
+                </div>
+                
+                <div id="regras">
+                    <h1>Regras de plataforma</h1>
+                    <p>
+                        Para garantir um ambiente seguro e respeitoso, 
+                        não são permitidos conteúdos que:
+                    </p>
+                    <ul>
+                        <li>descrevam atos sexuais de forma explícita ou gráfica</li>
+                        <li>utilizem nomes sexuais ou vulgares para partes do corpo</li>
+                        <li>contenham detalhamento sexual, mesmo em tom de relato</li>
+                        <li>promovam ou incentivem violência, ódio ou discriminação</li>
+                        <li>exponham ou identifiquem pessoas reais (nomes, perfis, locais específicos)</li>
+                        <li>incentivem práticas ilegais ou autoagressão</li>
+                    </ul>
+                    <p>
+                        Relatos sensíveis são permitidos, desde que sejam tratados de forma responsável, respeitosa e não gráfica.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="relatos" class="hide">
+        
+        
+        
+        <div class="container">
+            <div class="relato rer hide" data-id="">
+                <header>
+                    <div class="relato-perfil">
+                        <div class="relato-icon"></div>
+                        <p>Anonimo</p> 
+                    </div>
+                    <time class="relato-data" datetime="16/01/2026">16/01/2026</time>
+                </header>
+                <main>
+                    <div class="tituloContainer">
+                        <h2 class="relatoTitulo">Relato Template</h2>
+                        <span class="categoriaElement">Categoria</span>
+                    </div>
+                    <p class="relato-conteudo">
+                        Há momentos em que guardar tudo dentro de si se torna cansativo demais. Pensamentos se acumulam, sentimentos se misturam e, aos poucos, aquilo que parecia pequeno começa a pesar. Nem sempre é fácil falar sobre o que dói, principalmente quando existe medo de julgamento, incompreensão ou indiferença. O Escuta Anônima surge como um espaço seguro para romper esse silêncio. Aqui, você pode compartilhar vivências, desabafos e relatos de forma respeitosa e anônima, sem a obrigação de ser forte o tempo todo. Escrever não apaga o que aconteceu, mas pode ajudar a organizar a mente, aliviar o coração e transformar confusão em palavras. Cada relato é recebido com cuidado, empatia e responsabilidade. Você não precisa ter todas as respostas, nem saber exatamente o que sente. Às vezes, apenas ser escutado já é um começo importante.
+                    </p>
+                </main>
+                <footer>
+                    <button class="relato-apoio"><i class="ph ph-sparkle"></i></button>
+                    <p class="relato-total-apoio">11</p>
+                </footer>
+            </div>
+            <div class="pop-up hide">
+                    <div class="formulario-container relato">
+                        <header>
+                            <button id="exit" class="smoth">X</button>
+                            <input type="text" id="tituloModal" value="Meu relato" maxlength="50">
+                        </header>
+                            <div class="ilustrar">  </div>
+                            <div class="formulario-textArea ">
+                                <textarea name="conteudo" id="conteudoUsuario" placeholder="Compartilhe a sua experiência..." maxlength="1200"></textarea>
+                                <p id="limite">0/1200</p>
+                                <span id="aviso" class="hide">Mínimo 225 caracteres</span>
+                            </div>
+                            <select name="" id="categorias-relato">
+                                <option value="outro" selected disabled>Qual tema seu relato aborda?</option>
+                                <option value="assédio">assédio</option>
+                                <option value="desabafo">desabafo</option>
+                                <option value="trabalho">trabalho</option>
+                                <option value="pressão social">pressão social</option>
+                                <option value="relacionamentos">relacionamentos</option>
+                                <option value="direitos deiguais">direitos desiguais</option>
+                                <option value="outro">outro</option>
+                            </select>
+                        <div class="envio">
+                            <div class="check">
+                                <input type="checkbox" name="politicas" class="politica">
+                                <label for="politica">concordo com as políticas de segurança e me responsabilizo pelo conteúdo</label>
+                            </div>
+                            <button id="enviar" class="smoth" disabled>Enviar</button>
+                        </div>
+                    </div>
+            </div>
+            <button id="create-relatorio" class="smoth">+</button>
+        </div>
+    </section>
+
+    <section id="estatisticas" class="hide">
+        <div class="container">
+            <div id="totalRelatos" class="relato">
+                <span>35</span>
+                <h3>Usuários quebraram o silêncio</h3>
+                <p>a dor silênciosa machuca</p>
+            </div>
+            <div id="apoios-usuario" class="relato">
+                <h3>Você apoiou</h3>
+                <span>15</span>
+                <h3>usuários no total</h3>
+                <p>agora eles sabem que não estão sozinhos</p>
+            </div>
+            <div id="total-categorias" class="relato">
+                
+                <h3>Categorias mais abordadas</h3>
+                <div class="relato" id="porcentagem-container">
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="scripts/api.js"></script>    
+    <script type="module" src="scripts/main.js"></script>    
+</body>
+</html>
