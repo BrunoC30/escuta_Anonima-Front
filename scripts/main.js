@@ -1,6 +1,8 @@
 //conexão
 import { listar_Relatos,criar_Relato,apoia_relatos,analisar_dados} from "./api.js";
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = "escutaanonima-backend-production.up.railway.app" || "http://localhost:3000";
+
+
 //elementos
 const navMenu = document.querySelectorAll("nav p");
 const sessoes = document.querySelectorAll("section");
