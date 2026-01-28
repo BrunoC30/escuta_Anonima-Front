@@ -23,6 +23,13 @@ const btaoExit = document.querySelector("#exit");
 navMenu.forEach(item=>{
     item.addEventListener("click",()=>{
         mostrarSessao(item.dataset.go);
+        let footerGeral = document.querySelector(".direitos-reservados");
+        //ocultar footer
+        if(item.dataset.go!="informativa"){
+            footerGeral.classList.add("hide");
+        }else{
+            footerGeral.classList.remove("hide");
+        }
         //previnir que o modal fique ativo
         const pop = document.querySelector(".pop-up");
         pop.classList.add("hide");
