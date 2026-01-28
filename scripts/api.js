@@ -39,7 +39,10 @@ catch(err){
 */
 export async function listar_Relatos(BASE_URL){
     try{
-        const resposta = await fetch(`${BASE_URL}/api/relatos`);
+        const resposta = await fetch(`${BASE_URL}/api/relatos`,({
+            method:"GET",
+            headers: {"Content-Type":"aplication/json","X-usuario":`${localStorage.getItem("userID")}`}
+        }));
 
         if(!resposta.ok){
             throw new Error;
