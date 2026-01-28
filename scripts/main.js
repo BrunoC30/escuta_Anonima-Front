@@ -1,6 +1,6 @@
 //conexão
 import { listar_Relatos,criar_Relato,apoia_relatos,analisar_dados} from "./api.js";
-const BASE_URL = "escutaanonima-backend-production.up.railway.app" || "http://localhost:3000";
+const BASE_URL = "https://escutaanonima-backend-production.up.railway.app" || "http://localhost:3000";
 
 
 //elementos
