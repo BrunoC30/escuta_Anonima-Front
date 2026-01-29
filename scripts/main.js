@@ -259,8 +259,8 @@ async function formatarAnalise(){
 
 
     
-   graficoRelatos.textContent = dados.relatos[0].total_relatos
-   graficoApoios.textContent = dados.apoios[0].total_apoios;
+   graficoRelatos.textContent = dados.relatos.total_relatos;
+   graficoApoios.textContent = dados.apoios.total_apoios;
     
 
    dados.categorias.forEach(objeto=>{
