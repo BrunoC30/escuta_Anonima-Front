@@ -1,6 +1,6 @@
 //conexão
 import { listar_Relatos,criar_Relato,apoia_relatos,analisar_dados} from "./api.js";
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://escuta-anonima-backend.onrender.com" || "http://localhost:3000";
 console.log(BASE_URL);
 
 //elementos
